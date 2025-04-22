@@ -1,33 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './index.css';
+import { useRef } from 'react';
+
+import { Header } from './components/Header'
+import { About } from './components/About'
+import { Why } from './components/WhyBEC'
+import { Skills } from './components/Skills'
+import { Answers } from './components/Answers'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const topRef = useRef(null);
+  const aboutRef = useRef(null);
+  const whyRef = useRef(null);
+  const skillsRef = useRef(null);
+  const answersRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div ref={topRef}>
+        <Header scrollToSection={scrollToSection} refs={{ aboutRef, whyRef, skillsRef, answersRef, topRef }} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <About ref={aboutRef} />
+      <Why ref={whyRef} />
+      <Skills ref={skillsRef} />
+      <Answers ref={answersRef} />
     </>
   )
 }
