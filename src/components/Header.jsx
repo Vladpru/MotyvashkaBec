@@ -2,8 +2,6 @@ import'./Header.css';
 
 export const Header = ({ scrollToSection, refs }) => {
 
-
-
     return (
         <div className="header_container">
             <header className="header">
@@ -20,22 +18,22 @@ export const Header = ({ scrollToSection, refs }) => {
                             </a>
                         </li>
                         <li className="menu_elem">
-                            <a onClick={() => scrollToSection(refs.topRef)}>
-                                About me
+                            <a onClick={() => scrollToSection(refs.aboutRef)}>
+                                About/Why me
                             </a>
                         </li>
                         <li className="menu_elem">
-                            <a onClick={() => scrollToSection(refs.topRef)}>
+                            <a onClick={() => scrollToSection(refs.whyRef)}>
                                 Why BEC
                             </a>
                         </li>
                         <li className="menu_elem">
-                            <a onClick={() => scrollToSection(refs.topRef)}>
-                                Skils
+                            <a onClick={() => scrollToSection(refs.skillsRef)}>
+                                Skills
                             </a>
                         </li>
                         <li className="menu_elem">
-                            <a onClick={() => scrollToSection(refs.topRef)}>
+                            <a onClick={() => scrollToSection(refs.answersRef)}>
                                 Answers
                             </a>
                         </li>

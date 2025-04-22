@@ -1,7 +1,9 @@
+import Lenis from '@studio-freight/lenis'
 import './index.css';
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 
 import { Header } from './components/Header'
+import { Welcome } from './components/Welcome'
 import { About } from './components/About'
 import { Why } from './components/WhyBEC'
 import { Skills } from './components/Skills'
@@ -9,6 +11,17 @@ import { Answers } from './components/Answers'
 
 
 function App() {
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    };
+
+    requestAnimationFrame(raf);
+  }, []); // Плавний scroll
 
   const topRef = useRef(null);
   const aboutRef = useRef(null);
@@ -22,9 +35,9 @@ function App() {
 
   return (
     <>
-      <div ref={topRef}>
-        <Header scrollToSection={scrollToSection} refs={{ aboutRef, whyRef, skillsRef, answersRef, topRef }} />
-      </div>
+      <div className='topref' ref={topRef} />
+      <Header scrollToSection={scrollToSection} refs={{ aboutRef, whyRef, skillsRef, answersRef, topRef }} />
+      <Welcome />
       <About ref={aboutRef} />
       <Why ref={whyRef} />
       <Skills ref={skillsRef} />
