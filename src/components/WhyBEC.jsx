@@ -4,7 +4,7 @@ import "./WhyBEC.css"
 export const Why = forwardRef((props, ref) => (
     <section className="why" >
         <div className="why_wrap">
-            <h1 className="why_title title" ref={ref}>Чому BEC</h1>
+            <h1 className="why_title title" ref={ref}>Чому BEC?</h1>
             <p className="why_text">
             Хоч мій бестівський шлях ще не дуже великий, проте я перейнявся духом кортіми BEC’у та розумію, що кортіма інженерних змагань саме те, що відповідає мені. У беківцях живе той дух, який можна побачити на будь-яких зборах чи то четвергових, чи то на зборах відділу. Це мене надихає та ще раз запевнює, що BEC – те що мені потрібно.
             <br></br>

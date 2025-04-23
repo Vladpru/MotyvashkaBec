@@ -1,0 +1,41 @@
+.answers {
+    position: relative;
+    padding-bottom: 80px; /* Додаємо місце для стрілочок */
+}
+
+.answers_swiper {
+    margin: 60px 0;
+}
+
+.answers_card_title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.answers_card_text {
+    text-indent: 30px;
+    margin-bottom: 15px; /* Додаємо відступи між абзацами */
+}
+
+.answers_slide {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 0; 
+    height: auto; 
+}
+
+.answers_card {
+    width: 100%;
+    max-width: 900px;
+    text-align: justify;
+    border: 1px solid #f5a020;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto; 
+}

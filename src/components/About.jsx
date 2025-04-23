@@ -16,7 +16,7 @@
                 <div className="about_me_top">
                     <div className="about_me_left">
                         <h1 className="about_me_title">
-                            Хто я
+                            Хто я?
                         </h1>
                         <p className="about_me_text">
                             Моє захоплення ІТ почалося ще зі шкільних уроків по Scratch, вже у п’ятому класі я 
@@ -40,7 +40,7 @@
                 </div>
                 <div className="about_me_bottom">
                     <h1 className="bottom_title">
-                        Чому я
+                        Чому я?
                     </h1>
                     <ul className="bottom_pros">
                         <div className={`bottom_pro ${isVisible1 ? 'fade-in' : ''}`} ref={prosRef1}>
