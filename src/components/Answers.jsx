@@ -11,7 +11,7 @@ export const Answers = forwardRef((props, ref) => (
     <div className="answers_swiper">
       <Swiper
         modules={[Navigation]}
-        spaceBetween={0}
+        spaceBetween={10}
         slidesPerView={1}
         loop={true}
         navigation={{
@@ -19,7 +19,7 @@ export const Answers = forwardRef((props, ref) => (
             prevEl: '.swiper-button-prev',
         }}
         onSlideChange={() => console.log('answer slide change')}
-        className="swiper"
+        className="swiper_ans"
       >
         <SwiperSlide className="answers_slide">
           <div className="answers_card">

@@ -85,3 +85,18 @@
 .ref_about_point {
     scroll-margin-top: 100px;
 }
+
+@media (max-width: 1000px) {
+    .about_top_left {
+        padding: 0 20px;
+    }
+    .about_me_img {
+        display: none;
+    }
+    .about_me_top {
+        justify-content: center;
+    }
+    .about_me_text {
+        padding: 0 20px;
+    }
+}

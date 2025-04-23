@@ -15,7 +15,7 @@
             <div className="about_me">
                 <div className="about_me_top">
                     <div className="about_me_left">
-                        <h1 className="about_me_title">
+                        <h1 className="about_me_title title">
                             Хто я?
                         </h1>
                         <p className="about_me_text">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div className="about_me_bottom">
-                    <h1 className="bottom_title">
+                    <h1 className="bottom_title title">
                         Чому я?
                     </h1>
                     <ul className="bottom_pros">

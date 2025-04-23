@@ -34,7 +34,7 @@ export const Skills = forwardRef((props, ref) => (
           prevEl: '.swiper-button-prev',
         }}
         onSlideChange={() => console.log('skill slide change')}
-        className="swiper"
+        className="swiper_skl"
       >
         {skillsData.map((skill, index) => (
           <SwiperSlide key={index}>

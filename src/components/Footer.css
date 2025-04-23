@@ -9,3 +9,11 @@
 .footer_text span {
     text-transform: uppercase;
 }
+
+@media (max-width: 800px) {
+    .footer {
+        margin-top: 10px;
+    }
+
+    
+}

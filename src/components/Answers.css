@@ -51,3 +51,44 @@
 .swiper-button-prev:hover {
   color: #fff;
 }
+
+@media (max-width: 990px) {
+    .answers_swiper {
+        padding: 0 30px;
+    }
+    .answers_card {
+        max-width: 750px;
+    }
+    .title {
+        font-size: 45px;
+    }
+    .answers_card_text {
+        font-size: 20px;    
+    }
+}
+
+@media (max-width: 800px) {
+    .answers_swiper {
+        height: 450px;
+    }
+    .title {
+        font-size: 42px;
+    }
+    .answers_card_text {
+        font-size: 20px;    
+    }
+}
+@media (max-width: 500px) {
+    .title {
+        font-size: 38px;
+    }
+}
+@media (max-width: 450px) {
+    .answers {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+    .answers_title {
+        margin-bottom: 80px;
+    }
+}

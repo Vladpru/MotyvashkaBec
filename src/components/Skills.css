@@ -49,3 +49,49 @@
 .swiper-button-prev:hover {
   color: #fff;
 }
+
+@media (max-width: 1100px) {
+    .swiper-button-prev {
+        display: none;
+    }
+    .swiper-button-next {
+        display: none;
+    }
+}
+@media (max-width: 830px) {
+    .slide_card_img {
+        width: 150px;
+        height: 150px;
+    }
+    
+}
+@media (max-width: 800px) {
+    .swiper_skl {
+        height: 250px;
+    }
+}
+@media (max-width: 700px) {
+    .slide_card_img {
+        width: 120px;
+        height: 120px;
+    }
+    .slide_card_img {
+        padding: 10px;
+    }
+    
+}
+@media (max-width: 570px) {
+    .slide_card_img {
+        width: 100px;
+        height: 100px;
+    }
+    .skills {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 490px) {
+    .slide_card_img {
+        width: 70px;
+        height: 70px;
+    }
+}
