@@ -1,10 +1,10 @@
 .answers {
     position: relative;
-    padding-bottom: 80px; /* Додаємо місце для стрілочок */
+    margin-bottom: 40px;
 }
 
 .answers_swiper {
-    margin: 60px 0;
+    margin-top: 20px;
 }
 
 .answers_card_title {
@@ -38,4 +38,16 @@
     flex-direction: column;
     justify-content: center;
     height: auto; 
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #f5a020;
+  top: 55%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #fff;
 }

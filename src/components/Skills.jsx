@@ -1,6 +1,7 @@
 import { forwardRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
 import 'swiper/css';
 import './Skills.css';
 
@@ -20,13 +21,17 @@ export const Skills = forwardRef((props, ref) => (
     <h1 className="skills_title title">Мої навички</h1>
     <div className="skills_swiper">
       <Swiper
-        modules={[Autoplay]}
+        modules={[Autoplay, Navigation]}
         spaceBetween={0}
         slidesPerView={4}
         loop={true}
         autoplay={{
           delay: 1500,
           disableOnInteraction: false,
+        }}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         }}
         onSlideChange={() => console.log('skill slide change')}
         className="swiper"
@@ -39,6 +44,8 @@ export const Skills = forwardRef((props, ref) => (
             </div>
           </SwiperSlide>
         ))}
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-button-next"></div>
       </Swiper>
     </div>
   </section>

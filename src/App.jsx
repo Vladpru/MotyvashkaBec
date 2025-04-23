@@ -8,7 +8,7 @@ import { About } from './components/About'
 import { Why } from './components/WhyBEC'
 import { Skills } from './components/Skills'
 import { Answers } from './components/Answers'
-
+import { Footer } from './components/Footer'
 
 function App() {
 
@@ -42,6 +42,7 @@ function App() {
       <Why ref={whyRef} />
       <Skills ref={skillsRef} />
       <Answers ref={answersRef} />
+      <Footer />
     </>
   )
 }

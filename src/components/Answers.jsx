@@ -1,5 +1,7 @@
 import { forwardRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
 import 'swiper/css';
 import './Answers.css';
 
@@ -8,9 +10,14 @@ export const Answers = forwardRef((props, ref) => (
     <h1 className="answers_title title">Відповіді на запитання</h1>
     <div className="answers_swiper">
       <Swiper
+        modules={[Navigation]}
         spaceBetween={0}
         slidesPerView={1}
         loop={true}
+        navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }}
         onSlideChange={() => console.log('answer slide change')}
         className="swiper"
       >
@@ -69,6 +76,8 @@ export const Answers = forwardRef((props, ref) => (
               </p>
           </div>
         </SwiperSlide>
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-button-next"></div>
       </Swiper>
     </div>
   </section>
