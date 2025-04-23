@@ -10,44 +10,34 @@
 
 .about_top {
     display: flex;
-    gap: 60px;
+    justify-content: center;
     align-items: center;
     padding: 50px 0;
 }
 
 .about_top_left {
     padding: 10px;
-    max-width: 700px;
+    max-width: 1100px;
 }
 
 .top_left_title {
     font-size: 48px;
     text-align: justify;
     margin-bottom: 90px;
+    margin-top: 30px;
 }
-.ref_about_point {
-  scroll-margin-top: 100px;
+.top_left_title span {
+    text-align: center;
 }
+
 .top_left_text {
     font-size: 24px;
     font-weight: 100;
     text-align: justify;
+    margin-bottom: 40px;
 }
 .top_left_text span {
     font-weight: 800;
     color: #f5a020;
     text-shadow: 0px 0px 3px #f5a020;
-}
-
-.about_top_right {
-    max-width: 700px;
-    max-height: 400px;
-}
-.about_top_right_img {
-    width: 100%;
-    border-radius: 20px;
-    border: 2px solid #f5a020;
-    height: auto;
-    object-fit: cover;
-    box-shadow: 0px 0px 15px #f5a020;
 }

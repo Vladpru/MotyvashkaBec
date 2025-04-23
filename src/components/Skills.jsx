@@ -31,14 +31,14 @@ export const Skills = forwardRef((props, ref) => (
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide_card">
-            <img className="slide_card_img" src="/images/html.svg" alt="HTML" />
-            <p className="slide_label">HTML</p>
+            <img className="slide_card_img" src="/images/git.svg" alt="GIT" />
+            <p className="slide_label">Git</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide_card">
-            <img className="slide_card_img" src="/images/git.svg" alt="GIT" />
-            <p className="slide_label">Git</p>
+            <img className="slide_card_img" src="/images/html.svg" alt="HTML" />
+            <p className="slide_label">HTML</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>

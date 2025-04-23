@@ -5,5 +5,6 @@ export const Answers = forwardRef((props, ref) => (
         <h1 className="answers_title title">
             Відповіді на запитання
         </h1>
+        
     </section>
 ));

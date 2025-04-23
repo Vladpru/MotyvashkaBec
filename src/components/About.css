@@ -1,10 +1,8 @@
-.about_me {
-
-}
 .about_me_top {
     display: flex;
     gap: 60px;
     align-items: center;
+    margin-top: 60px;
 }
 .about_me_left {
     max-width: 650px;
@@ -81,4 +79,8 @@
 .bottom_pro.fade-in .bottom_pro_img {
     opacity: 1;
     transform: rotate(0deg);
+}
+
+.ref_about_point {
+    scroll-margin-top: 100px;
 }
