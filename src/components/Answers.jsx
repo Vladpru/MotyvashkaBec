@@ -79,6 +79,9 @@ export const Answers = forwardRef((props, ref) => (
         <div className="swiper-button-prev"></div>
         <div className="swiper-button-next"></div>
       </Swiper>
+      <p className="footer_text">
+        І на останок, <span>во ім’я Лобзіка, Паяльника та Святого Штангенциркуля — EBEEEEEC.</span>
+      </p>
     </div>
   </section>
 ));

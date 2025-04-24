@@ -85,6 +85,11 @@
 .ref_about_point {
     scroll-margin-top: 100px;
 }
+@media (max-width: 1400px) {
+    .about_me_top {
+        padding: 0 30px;
+    }
+}
 
 @media (max-width: 1000px) {
     .about_top_left {
